@@ -1,0 +1,1000 @@
+/* border: 1px solid red; */
+/* 브라우저 기본 스타일 없애기 */
+*{   padding: 0;margin: 0;list-style: none;box-sizing: border-box;text-decoration: none;  }
+
+
+/* 인포메이션 바의 컨텐츠를 양끝 정렬*/
+.information_bar
+{
+    display: flex;
+    
+    justify-content: space-between;
+    z-index: 100;
+    
+    padding: 10px;
+
+    background-color: rgb(36, 36, 180);
+    color: white;
+}
+
+.information_bar .information
+{
+    display: flex;
+    padding-left: 30px;
+}
+
+/* 인포메이션 바 아이콘 패딩 */
+.information_bar div i{ padding-left: 30px;}
+
+.navgationbar{color: rgb(245, 232, 232);}
+
+/* 인포메이션 바 오른쪽 아이콘 포지션과 디자인 */
+.information_bar .information_icon i
+{
+    border: 1px solid white;
+
+    position: relative;
+    left: -70px;
+    
+    padding: 6px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* fixed로 고정 */
+/* 네비바 우측 설정 */
+.navgationbar .homenav
+{
+    position: fixed;
+    left: 5%;
+
+    font-size: 40px;
+    top: 60px;
+}
+
+.navgationbar .navgationlist
+{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+}
+
+.navgationbar .navgationlist li .button
+{
+    position: relative;
+    padding: 5px 20px;
+
+    top: -5px;
+    background-color: aqua;
+    color: white;
+    border: white;
+}
+
+/* 네비게이션 바 우측 패딩주기 */
+.navgationbar .navgationlist li{padding-right: 30px;}
+
+/* 네비게이션 바 돋보기아이콘 컬러 */
+.navgationbar .navgationlist i{color: aqua;}
+
+/* 바디에 릴레이션 기준 주기 */
+.pin{position: relative;}
+
+/* 바디를 기준으로 공백을 올려서 릴레이티브 포지션 */
+.img
+{
+    background-image: url("./img_startup/carousel-2.jpg");
+    background-size: cover;
+    height: 750px;
+    top: -60px;
+}
+
+.img div
+{
+    text-align: center;
+    position: relative;
+    top: 300px;
+
+    color: white;
+}
+
+.img div #small_text    {   font-size: 20px;    }
+
+.img div #big_text
+{
+    font-size: 50px;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* 버튼 디자인 */
+.img div button{color: white;padding: 10px 20px;margin: 5px;}
+
+.img div #blue
+{
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+.img div #white{background-color: transparent;border: 2px solid white;}
+
+/*  사진위 통계 정렬 */
+.statistics
+{
+    display: flex;
+    justify-content: center;
+
+    /* 바디가 기준임 */
+    position: relative;
+    top: -56px;
+}
+
+.statistics .framestatic1
+{
+    padding: 30px 80px;
+    
+    display: flex;
+    background-color: rgb(13, 184, 236);
+}
+
+.statistics .framestatic2
+{
+    padding: 30px 80px;
+
+    display: flex;
+    background-color: rgb(245, 247, 248);
+}
+
+.statistics .framestatic3
+{
+    padding: 30px 80px;
+
+    display: flex;
+    background-color: rgb(13, 184, 236);
+}
+
+/* 프레임 스택 안에 내용에 패딩 주기 */
+.statistics div i{padding: 15px; margin: 10px;}
+
+.statistics .framestatic1 i{background-color: white;color: rgb(13, 184, 236);}
+
+.statistics .framestatic1 div{color: white;}
+
+.statistics .framestatic2 i{    background-color: rgb(13, 184, 236);    color: white;}
+
+.statistics .framestatic2 div div   {    color: rgb(13, 184, 236);  }
+
+.statistics .framestatic3 i {    background-color: white;    color: rgb(13, 184, 236);   }
+
+.statistics .framestatic3 div {   color: white;   }
+
+/* 어바웃 어스 정렬 밎 패딩 */
+.aboutus
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* 이미지 삽입 및 너비 */
+section #img
+{
+    background-image: url("./img_startup/about.jpg");
+    width: 90%;
+    background-size: cover;
+}
+
+section #text p {   width: 90%; }
+
+/* 어바웃 시작 */
+/* 어바웃 어스 글자 스타일 */
+.aboutus #text #text1
+{
+    color: rgb(13, 184, 236);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.aboutus #text #text2
+{
+    font-size: 40px;
+    font-weight: 550;
+}
+
+/* div로 구분선 스타일 만들기 */
+.aboutus #text #hr
+{
+    width: 150px;
+    padding: 2px;
+
+    background-color: rgb(13, 129, 196);
+
+    margin-bottom: 35px;
+}
+
+/* 텍스트 리스트 상단 정렬 */
+.aboutus #text .text_ul .up
+{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    left: -280px;
+
+    padding-left: 250px;
+    margin-bottom: 15px;
+}
+
+/* 텍스트 리스트 하단 정렬 */
+.aboutus #text .text_ul .dowm
+{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    left: -304px;
+
+    padding-left: 275px;
+
+    margin-bottom: 20px;
+}
+
+/* 리스트 폰트 사이즈 */
+.aboutus #text .text_ul{    font-size: 15px;    }
+
+/* 리스트 아이콘 컬러 */
+.aboutus #text .text_ul i   {    margin-right: 10px;    color: rgb(13, 184, 236);   }
+
+/* 리스트 폰트 굵기 */
+.aboutus #text .text_ul {    font-weight: 700;  }
+
+/* 연락처 정렬 */
+.aboutus #text .phone
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 아이콘 스타일 및 패딩 */
+.aboutus #text .phone i
+{
+    padding: 15px;
+    margin-right: 20px;
+    background-color: rgb(13, 184, 236);
+    color: white;
+}
+
+/* 연락처 글자 굵기 및 사이즈 */
+.aboutus #text .phone span
+{
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* 연락처 글자색 */
+.aboutus #text .phone #number   {    color: rgb(13, 184, 236);  }
+
+/* 연락처 버튼 */
+.aboutus #text button
+{
+    /* 패딩 위아래 10, 좌우 40 */
+    padding: 10px 40px;
+    margin-top: 25px;
+
+    color: white;
+    background-color: rgb(13, 184, 236);
+
+    border: transparent;
+}
+
+/* 어바웃 어스와 아래 섹션 간의 마진을 둠 */
+.aboutus{ margin-bottom: 150px;}
+
+/* 어바웃 끝 */
+
+/* 와이 추스 시작 */
+/* 와이 추즈 어스 섹터의 제목 정렬 */
+.WHYCHOOSEUS .title{    text-align: center; }
+
+.WHYCHOOSEUS .title #title_text1 {    color: rgb(13, 184, 236);  font-weight: 600;}
+
+.WHYCHOOSEUS .title #title_text2
+{
+    position: relative;
+    left: 30%;
+    width: 500px;
+
+    font-size: 35px;
+    font-weight: 600;   
+}
+
+/* 와이 추스 타이틀 구분선 */
+.WHYCHOOSEUS .title #hr
+{
+    position: relative;
+    left: 44%;
+    width: 150px;
+    padding: 2px;
+    border: 1px solid transparent;
+
+    background-color: rgb(13, 184, 236);
+
+}
+
+/* 아이 추즈 내용 정렬 및 마진 */
+.WHYCHOOSEUS .detaildiv
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    margin-top: 40px;
+}
+
+/* 와이 추즈 이미지 */
+.WHYCHOOSEUS .detaildiv #imgbox
+{
+    background-image: url("./img_startup/feature.jpg");
+    width: 30%;
+    height: 400px;
+    
+    background-size: cover;
+}
+
+/*와이 추즈 텍스트의 부모 div 너비 */
+.WHYCHOOSEUS .detaildiv #textbox1{width: 30%;}
+
+.WHYCHOOSEUS .detaildiv #textbox2{width: 30%;}
+
+/* 와이 내용 아이콘 스타일과 패딩 마진 */
+.WHYCHOOSEUS #textbox1 div .texticon
+{
+    padding: 20px;
+    margin-bottom: 10px;
+
+    background-color: rgb(13, 184, 236);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.WHYCHOOSEUS #textbox2 div .texticon
+{
+    padding: 20px;
+    margin-bottom: 10px;
+
+    background-color: rgb(13, 184, 236);
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* 와이 텍스트1 글자 설정 */
+.WHYCHOOSEUS #textbox1 div .texttitle{    font-size: 20px;   font-weight: 545;   }
+.WHYCHOOSEUS #textbox2 div .texttitle{    font-size: 20px;   font-weight: 545;   }
+
+/* 와이 이미지 제외한 내용에 마진 주기 */
+.WHYCHOOSEUS .detaildiv .pa{    margin-bottom: 50px;}
+
+/* 와이 추스 끝 */
+
+
+/* 아워 서비스 시작 */
+/* 하단 섹션과 마진 주기 */
+.outservice{margin-bottom: 150px;}
+
+/* 타이틀 정렬, 폰트 굵기 */
+
+
+.outservice .title
+{
+    text-align: center;
+    font-weight: 550;
+    margin-top: 150px;
+}
+
+/* 텍스트1 스타일 */
+.outservice .title #text1   {  color: rgb(13, 184, 236);   }
+
+.outservice .title #text2   {    width: 500px;    margin-left: 30%;    font-size: 35px;   }
+
+/* 구분선 속성 */
+.outservice .title div
+{
+    width: 150px;
+    padding: 2px;
+    background-color: rgb(13, 129, 196);
+    margin-left: 44%;
+}
+
+/* 내용부모에서 1차 플렉스 정렬, 래핑, 타이틀과 마진*/
+.outservice .parent
+{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* 내용의 배경색, 정렬, 너비, 마진 */
+.outservice .parent .box
+{
+    width: 30%;
+    margin: 20px;
+    padding-bottom: 30px;
+    
+    text-align: center;
+    background-color: rgba(127, 197, 255, 0.103);
+}
+
+
+/* 아이콘 배경 회전 */
+.outservice .parent div .ro
+{
+    padding: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    width: 17%;
+    transform: rotate(45deg);
+    
+    position: relative;
+    left: 36%;
+    
+    background-color: rgb(13, 184, 236);
+}
+
+/* 아이콘 다시 회전 */
+.outservice .parent div i   {    color: white;    transform: rotate(-45deg);    }
+
+/*아이콘 다음 두번째 텍스트 설정 */
+.outservice .parent .box .boxtitle
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    font-weight: 550;
+}
+
+/* 마지막 박스 설정 */
+.outservice .parent .box_last   {   background-color: rgb(13, 184, 236);    color: white;  padding: 40px 20px}
+
+.outservice .parent .box_last .number   {font-size: 30px; font-weight: 550;}
+
+/* 아워 서비스 끝 */
+
+/* 프라이스 서비스 */
+/* 하단 섹션과 마진 주기 */
+.pricesevice{margin-bottom: 150px;}
+
+/* 타이틀 정렬, 폰트 굵기 */
+.pricesevice .title {text-align: center;    font-weight: 550;    margin-top: 150px; }
+
+/* 텍스트 스타일 */
+.pricesevice .title #text1   {  color: rgb(13, 184, 236);   }
+.pricesevice .title #text2  {    width: 500px;    margin-left: 30%;    font-size: 35px;    }
+/* 구분선 속성 */
+.pricesevice .title div {    width: 150px;    padding: 2px;    background-color: rgb(13, 129, 196);    margin-left: 44%;   }
+
+/* 내용 부모에서 1차 정렬, 베경색 */
+.pricesevice .parent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgba(0, 255, 255, 0.055);
+}
+
+/* 가운데 박스 배경, 그림자 효과 */
+.pricesevice .parent .boxwhite  {    background-color: white;    box-shadow: 3px 6px rgba(148, 147, 147, 0.342);    }
+
+
+/* 부모에서 너비 줌 */
+.pricesevice .parent .box   {    width: 70%;    }
+
+/* 내용 텍스트 패딩 및 스타일 */
+.pricesevice .parent div #text{    padding-top: 15px;  color: rgb(13, 184, 236); font-size: 25px; font-weight: 550;}
+.pricesevice .parent div p{    padding-left: 30px;}
+
+/* 가격 설정 */
+.pricesevice .parent #money{font-size: 30px;font-weight: 550;}
+.pricesevice .parent #money .small_text{   font-size: 15px;}
+
+.pricesevice .parent ul li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* 아이콘 스타일및 패딩 */
+.pricesevice .parent ul li i{padding-right: 60px; color: rgb(13, 184, 236);}
+.pricesevice .parent ul li .x{ color: red}
+
+/* 버튼 설정*/
+.pricesevice .parent button
+{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(13, 184, 236);
+    color: white;
+}
+/* 프라이스 서비스 섹션 끝 */
+
+/* 리궤스트 설문 섹션 시작 */
+/* 좌우 div 양끝 정렬하고 시작 */
+.REQUESTAQUOTE
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.REQUESTAQUOTE .left .title{font-weight: 550;}
+
+.REQUESTAQUOTE .left{width: 50%; }
+.REQUESTAQUOTE .right
+{
+    width: 40%;
+    margin-right: 40px;
+    text-align: center;
+    background-color: rgb(13, 184, 236);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* 타이틀 설정 */
+.REQUESTAQUOTE .left .title #text1{font-size: 20px;color: rgb(13, 184, 236);}
+.REQUESTAQUOTE .left .title #text2{    font-size: 36px;}
+.REQUESTAQUOTE .left .title #hr
+{
+    width: 150px;
+    padding: 2px;
+    background-color:rgb(13, 184, 236);
+}
+
+/* 아이콘 텍스트 정렬및 패딩 마진 */
+.REQUESTAQUOTE .left .icontext
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+    padding-right: 120px;
+}
+/* 아이콘에 추가로 패딩과 컬러 */
+.REQUESTAQUOTE .left .icontext div i
+{
+    padding-right: 10px;
+    color: rgb(13, 184, 236);
+}
+
+/* 텍스트에 추가 마진 */
+.REQUESTAQUOTE .left #textbox{margin-top: 20px;margin-bottom: 20px;}
+
+.REQUESTAQUOTE .left .bottom
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.REQUESTAQUOTE .left .bottom div i
+{
+    padding: 20px;
+    background-color: rgb(13, 184, 236);
+    color: white;
+}
+
+.REQUESTAQUOTE .left .bottom .num
+{
+    padding-top: 20px;
+    font-weight: 550;
+    padding-left: 15px;
+}
+.REQUESTAQUOTE .left .bottom .num p{ font-size: 20px; color: rgb(13, 184, 236);}
+
+/* 인풋 전체 패딩 마진 너비 */
+.REQUESTAQUOTE .right input
+{
+    width: 70%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(230, 255, 247);
+    border: transparent;
+}
+
+/* 텍스트 에리어 마진 너비 */
+.REQUESTAQUOTE .right #message
+{
+    width: 70%;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    margin-top: 15px;
+    background-color: rgb(230, 255, 247);
+    border: transparent;
+}
+
+/* 인풋 서브밋은 속성을 따로 줌 */
+.REQUESTAQUOTE .right #submit
+{
+    color: white;
+    background-color: rgb(25, 21, 68);
+}
+/* 리퀘스트 설문 섹션 끝 */
+
+/* 테스트 모니터 섹션 시작 */
+.testmonitor    {margin-bottom: 100px;}
+
+.testmonitor .title{    text-align: center;    font-weight: 550;    margin-top: 150px;}
+
+/* 텍스트1 스타일 */
+.testmonitor .title #text1   {  color: rgb(13, 184, 236);   }
+.testmonitor .title #text2{ width: 500px;    margin-left: 30%;    font-size: 35px;    }
+.testmonitor .title #hr {    width: 150px;    padding: 2px;    background-color: rgb(13, 129, 196);    margin-left: 44%;   }
+
+
+
+/* 내용 정렬 및 패딩 마진 전체 배경색*/
+.testmonitor .monitordetaildiv
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.testmonitor .profilbox .profilimg1 {    background-image: url("./img_startup/testimonial-1.jpg");  background-repeat: no-repeat; margin: 10px; width: 20%; height: 80%; margin-left: 20px;}
+.testmonitor .profilbox .profilimg2 {    background-image: url("./img_startup/testimonial-2.jpg");  background-repeat: no-repeat; margin: 10px; width: 20%; height: 80%; margin-left: 20px;}
+.testmonitor .profilbox .profilimg3 {    background-image: url("./img_startup/testimonial-3.jpg");  background-repeat: no-repeat; margin: 10px; width: 20%; height: 80%; margin-left: 20px;}
+
+.testmonitor .monitordetaildiv p{ margin-left: 20px; padding-top: 10px;}
+
+.testmonitor .monitordetaildiv .profilbox
+{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+.testmonitor .monitordetaildiv .profilbox .profiltitle{    color: rgb(13, 184, 236);    font-size: 20px;    font-weight: 550;}
+
+/* 전체 프로필 색주기, 패딩 */
+.testmonitor .monitordetaildiv .profil1 {   background-color: rgba(13, 184, 236, 0.181); padding-top: 20px ; padding-bottom: 40px;}
+.testmonitor .monitordetaildiv .profil2 {   background-color: rgb(235, 243, 248); box-shadow: 3px 2px rgb(176, 172, 172); }
+
+/* 하위 점점점 정렬 */
+.testmonitor #hr
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 하위 점점점 */
+.testmonitor #hr div{    padding: 10px;    margin: 10px;    background-color: grey;}
+.testmonitor #hr .blue{width: 50px;    background-color: rgb(0, 102, 255);}
+
+/* 테스트 모니터 섹션 끝 */
+
+
+/* 팀 멤버 시작 */
+
+/* 팀멤버 시작 */
+/* 타이틀 스타일 */
+.teammember .title{    text-align: center;    font-weight: 550;    margin-top: 150px;}
+.teammember .title #text1   {  color: rgb(13, 184, 236);   }
+.teammember .title #text2{ width: 500px;    margin-left: 30%;    font-size: 35px;    }
+.teammember .title #hr {    width: 150px;    padding: 2px;    background-color: rgb(13, 129, 196);    margin-left: 44%;   }
+
+
+/* 카드 정렬 */
+.teammember #profilbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*카드 내용 정렬*/
+.teammember #profilbox .profilcard 
+{   
+    text-align:center;
+    margin: 30px;
+    background-color: rgba(160, 160, 230, 0.697);
+    width: 30%;
+}
+
+/* 이미지 설정 */
+.teammember #profilbox .profilcard .teamimg
+{
+    background-size:cover;
+    width: 100%;
+    padding: 50%;
+    height: 60px;
+    
+    background-repeat: no-repeat;
+}
+
+/* 이미지 삽입 */
+.teammember #profilbox .profilcard .img1{    background-image: url("./img_startup/team-1.jpg");}
+.teammember #profilbox .profilcard .img2{    background-image: url("./img_startup/team-2.jpg");}
+.teammember #profilbox .profilcard .img3{    background-image: url("./img_startup/team-3.jpg");}
+
+/* 이름 속성 */
+.teammember #profilbox .profilcard div .name{    color: rgb(13, 184, 236); font-size: 20px;    padding-top: 15px;}
+
+/* 글자 패딩 */
+.teammember #profilbox .profilcard div p{padding-bottom: 10px;}
+
+/* 팀 멤버 끝*/
+
+/* 최근 블로그  시작*/
+.latestbolg{margin-top: 150px;}
+
+/* 타이틀 스타일 */
+.latestbolg .title{    text-align: center;    font-weight: 550;    margin-top: 150px;}
+.latestbolg .title #text1   {  color: rgb(13, 184, 236);   }
+.latestbolg .title #text2{ width: 500px;    margin-left: 30%;    font-size: 35px;    }
+.latestbolg .title #hr {    width: 150px;    padding: 2px;    background-color: rgb(13, 129, 196);    margin-left: 44%;   }
+
+/* 카드 정렬*/
+.latestbolg .blogcardbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.latestbolg .blogcard   {   margin: 30px;    background-color: rgba(90, 239, 239, 0.068);   padding-bottom: 30px;}
+
+/* 이미지 설정 */
+.latestbolg .blogcard .blogimg
+{
+    background-size:cover;
+    width: 100%;
+    height: 300px;
+    
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+/* 이미지 삽입 */
+.latestbolg .blogcard #card1{    background-image: url("./img_startup/blog-1.jpg");}
+.latestbolg .blogcard #card2{    background-image: url("./img_startup/blog-2.jpg");}
+.latestbolg .blogcard #card3{    background-image: url("./img_startup/blog-3.jpg");}
+
+/* 아이콘 박스 정렬 */
+.latestbolg .blogcard .blogiconbox
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* 아이콘 줄 패딩및 스타일 */
+.latestbolg .blogcard div span  {   padding-left: 10px;    }
+.latestbolg .blogcard div i {  color: rgb(13, 184, 236);   padding-left: 20px;}
+.latestbolg .blogcard div .fa-calendar-days{padding-left: 15px; }
+
+/* 아이콘줄과 텍스트 패딩 맞추키 */
+.latestbolg .blogcard .blogtextbox{    padding-left: 20px; padding-top: 20px;}
+
+/* 아이콘 다음줄 스타일 */
+.latestbolg .blogcard .textbold{font-size: 25px; font-weight: 500;}
+
+/* 마지막줄 색깔주기 */
+.latestbolg .blogcard .color{color: rgb(13, 184, 236);}
+
+/* 이미지에 라벨 붙이기 */
+.latestbolg .labelbox
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1500px;
+    height: 500px;
+
+    /* 다음 섹션을 위해서 띄워버림 */
+    position: absolute;
+}
+
+/* 라벨 속성 및 패딩 */
+.latestbolg .labelbox #label1
+{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgb(13, 184, 236);
+    position: relative;
+    top: -165%;
+    left: -17.1%;
+    
+}
+
+.latestbolg .labelbox #label2
+{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgb(13, 184, 236);
+
+    position: relative;
+    top: -165%;
+    left: -15.2%;
+}
+
+.latestbolg .labelbox #label3
+{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgb(13, 184, 236);
+
+    position: relative;
+    top: -165%;
+    left: -13.3%;
+}
+
+/* 최근 블로그 섹션 끝 */
+
+/* 블로그 로고 섹션 */
+/* 리스트 정렬 */
+.brand ul
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.brand ul .brandimg
+{
+    width: 8%;
+    padding: 20px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+/* 이미지 삽입 */
+.brand ul .brand1{    background-image: url("./img_startup/vendor-2.jpg");}
+.brand ul .brand2{    background-image: url("./img_startup/vendor-3.jpg");}
+.brand ul .brand3{    background-image: url("./img_startup/vendor-4.jpg");}
+.brand ul .brand4{    background-image: url("./img_startup/vendor-5.jpg");}
+.brand ul .brand5{    background-image: url("./img_startup/vendor-6.jpg");}
+.brand ul .brand6{    background-image: url("./img_startup/vendor-7.jpg");}
+.brand ul .brand7{    background-image: url("./img_startup/vendor-8.jpg");}
+.brand ul .brand8{    background-image: url("./img_startup/vendor-9.jpg");}
+
+/* 브랜드 섹션 끝 */
+
+/* 마지막 하단 섹션 */
+.footterlist #linklist
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgb(15, 15, 123);
+    padding: 40px;
+    position: relative;
+    top: 20px;
+}
+
+.footterlist #linklist .parent
+{
+    margin: 20px;
+    margin-left: 30px;
+    color: white;
+    padding: 40px;
+
+    width: 20%;
+    height: 100%;
+}
+
+.footterlist #linklist .parent i {color: rgb(13, 184, 236); padding-right: 5px;}
+.footterlist #linklist .parent .title {font-size: 20px;}
+.footterlist #linklist .parent .hr
+{
+    background-color: rgb(13, 184, 236);
+    width: 40%;
+    padding: 2px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.footterlist #linklist .parent .icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.footterlist #linklist .parent .detail{margin-top: 5px;}
+
+.footterlist #linklist .parent .touchicon
+{
+    color: white;
+    background-color: rgb(13, 184, 236);
+    margin:9px;
+    padding: 6px;
+    position: relative;
+    left: -83%;
+    top: 30px;
+}
+
+.footterlist #linklist .parent .fa-arrow-right{ padding-right: 8px;}
+.footterlist #linklist .parent .list li
+{
+    position: relative;
+    left: -22.6%;
+}
+
+
+/* 푸터 */
+footer pre
+{    
+    background-color: rgb(4, 4, 88);  
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+
+    color: white;
+    padding-right: 10%;
+    font-size: 15px;
+}
+footer pre sub{font-size: 15px;}
+
+/* 마지막 섹션 위에 올릴 인풋 */
+.inputsection
+{
+    text-align: center;
+    position: absolute;
+    background-color: rgb(13, 184, 236);
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    width: 400px;
+    height: 435px;
+    top: 7500px;
+    left: 150px;
+    color: white;
+}
+
+.inputsection #title{font-size: 20px; font-weight: 550; margin-bottom:20px;}
+.inputsection p{margin-bottom: 20px;}
+.inputsection input{    padding: 20px; margin: 0;}
+.inputsection #input
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.inputsection #input #button{background-color: rgba(17, 17, 57, 0.874); color: white;}
